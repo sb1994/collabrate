@@ -10,10 +10,13 @@
   		
 		<div class="panel panel-default">
 
-  <div class="panel-body"> 
+  <div class="panel-body">  <router-link :to="{name:'project_edit',params:{id:project.id}}">Edit Project</router-link>
+      <button v-on:click=""></button>
   <img v-bind:src='path + "/storage/img/cover_img/" + project.cover_img' class=" showProjectImg" alt="">
   <hr>
-  
+  <h2><small>Project Rating :</small></h2>
+	  <hr>
+	  <project-rating v-bind:project="project" v-on:updateProjectRating="updateProjectRating" ></project-rating>
 
  
              
@@ -39,11 +42,11 @@
 	<hr>
     <p class="description"> {{project.description}}</p>
 	<hr>
-	
-	   <router-link :to="{name:'project_edit',params:{id:project.id}}">Edit Project</router-link>
-      <button v-on:click=""></button>
 	  
-	  <project-rating v-bind:project="project" v-on:updateProjectRating="updateProjectRating" ></project-rating>
+	  <hr>
+	  <h2><small class="titles">Comments</small></h2>
+	  <hr>
+	  <project-comment-log v-bind:project_comments="project_comments"></project-comment-log>
 	</div>
 	
 	</div>
@@ -52,7 +55,7 @@
         <div class="col-md-12">
           
           <div class="col-md-12 chatlog">
-          <project-comment-log v-bind:project_comments="project_comments"></project-comment-log>
+          <!--<project-comment-log v-bind:project_comments="project_comments"></project-comment-log>-->
 		  </div>
           <!-- <pre>{{project}}</pre> -->
         </div>
@@ -217,6 +220,11 @@ export default {
 </script>
 
 <style lang="css">
+
+hr {
+	margin-top:15px;
+
+}
 
 .chatlog{
 background:#fff;

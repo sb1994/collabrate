@@ -1,12 +1,15 @@
 <template lang="html">
   <div class="comment-form"  v-if="this.$auth.isAuthenticated()">
     <div class="form">
+	<h3 class="pull-center">Post A Comment</h3>
       <div class="form-row">
-        <textarea class="input" placeholder="Add comment..." required v-model="comment.comment"></textarea>
+	  
+        <textarea class="input form-control" rows="5" placeholder="Add comment..." required v-model="comment.comment"></textarea>
         <span class="input" v-if="errorComment" style="color:red">{{errorComment}}</span>
       </div>
+	  <br>
       <div class="form-row">
-        <input type="button" class="btn" v-on:click="addComment(projectId)" value="Add Comment">
+        <input type="button" class="btn pull-center" v-on:click="addComment(projectId)" value="Add Comment">
       </div>
     </div>
     <!-- <pre>{{comment}}</pre> -->
@@ -68,4 +71,7 @@ export default {
 </script>
 
 <style lang="css">
+.pull-center {
+    margin-left: 35%;
+}
 </style>

@@ -2,20 +2,37 @@
   <div>
     <loggedout-navbar></loggedout-navbar>
     <div class="container">
-      <p>Login Vue</p>
-      <div class="form-group">
-        <label for="email" class="label-control">Email</label>
+      <p class="loginVue">Login Vue</p>
+	  	 
+
+
+  <div class="div-center">
+
+
+    <div class="content">
+
+
+      <h3>Login</h3>
+      <hr />
+      <form>
+        <div class="form-group">
+          <label for="email" class="label-control">Email</label>
         <input type="text" id="email" name="email" value="" class="form-control" v-model="email">
-      </div>
-      <div class="form-group">
-        <label for="password" class="label-control">Password</label>
+        </div>
+        <div class="form-group">
+          <label for="password" class="label-control">Password</label>
         <input type="text" name="password" id="password" value="" class="form-control" v-model="password">
-      </div>
-      <button type="button" name="button"  v-on:click="loginUser">Login</button>
+        </div>
+        <button type="button" name="button" class="submit" v-on:click="loginUser">Login</button>
+        <hr/>
+		  
+      </form>
+
     </div>
-    <!-- <pre>
-      {{user}}
-    </pre> -->
+	</div>
+		
+      
+  </div>
   </div>
 </template>
 <script>
@@ -68,4 +85,72 @@ export default{
 }
 </script>
 <style>
+
+body{
+	
+	background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom:40%;
+}
+
+.loginVue{
+color:#fff;
+}		  
+
+.div-center {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 1em 2em;
+  border-bottom: 2px solid #ccc;
+  display: table;
+  -webkit-box-shadow: 7px 9px 15px 5px rgba(0,0,0,0.11); 
+box-shadow: 7px 9px 15px 5px rgba(0,0,0,0.11);
+}
+
+div.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.submit{
+margin-left:33%;
+background-color: #000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	margin-top:3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	
+	 transition: all 0.4s ease-in-out;
+
+}
+
+.submit:hover{
+margin-left:33%;
+background-color: #222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	
+	 transition: all 0.4s ease-in-out;
+
+}
 </style>

@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="projects-view">
-    <h1>Projects</h1>
+   
     <!-- <div id="projecta" v-for="project in projects"><p>{{project.id}}</p></div> -->
       <div class="row">
         <project-thumbnail v-for="project in projects" :project="project" :key="project.id" @requestDelete="deleteProject"></project-thumbnail>

@@ -1,4 +1,5 @@
 <template>
+
   <section id="reg">
  <div>
 
@@ -8,7 +9,7 @@
                         <hr>
                         <h2 class="text-center">Personalise Your Profile</h2>
                     </div>
-<div class="col-md-offset-1 col-md-10 col-sm-12">
+
     <div class="container">
 
       <div class="form-group">
@@ -99,7 +100,7 @@
     <pre>
       {{disableImg}}
     </pre>
-  </div>
+ 
   </div>
    </section>
 </template>
@@ -226,7 +227,9 @@ export default{
 </script>
 <style>
 
-
+.profile-border{
+			  border-right:.5px solid #fff;
+		  }
 
 #reg .col-md-6,
 #reg .col-md-12 {

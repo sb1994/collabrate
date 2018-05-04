@@ -14,6 +14,7 @@
 	 
       <div class="project-item">
 		<h3>{{project.name}}</h3>
+		<small>{{project.description}}</small>
 			    </div>
                  </div>
 				 

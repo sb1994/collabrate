@@ -1,11 +1,20 @@
 <template lang="html">
   <div id="search">
     <loggedin-navbar></loggedin-navbar>
-    <input type="text" id="search-box" v-model="searchText" v-on:keyup="getSelectedProjects()" placeholder="Search Project Term">
+	  <div class="container-fluid">
+	  <h1>Search projects</h1>
+	  <p>Please enter a search request</p>
+	  
+    <input type="text" id="search-box" class="search" v-model="searchText" v-on:keyup="getSelectedProjects()" placeholder="Search Project Term">
+ 
     <div class="row">
+	<div class="col-lg-12">
         <search-results v-for="project in projects" :project="project" :key="project.id"></search-results>
     </div>
+	</div>
+	</div>
   </div>
+   
 </template>
 
 <script>
@@ -184,4 +193,45 @@ export default {
 </script>
 
 <style lang="css">
+.search{
+	margin-bottom:10%;
+
+}
+
+.searchFixedScale
+{
+	min-width:380px;
+	min-height:400px;
+
+}
+
+input.search{
+  margin: 0 auto;
+  margin-bottom:2%;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+
+
 </style>

@@ -46669,7 +46669,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.row{\r\n\t\t\t  \r\n\t\t\t  margin-top: 5%;\r\n\t\t\t  margin-bottom: 8.6%;\n}\nbody {\r\n\t\t\t background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);\r\n\t\t\t  background-repeat: no-repeat;\r\n\t\t\t  background-size: cover;\r\n\t\t\t  font-size:16px;\r\n\t\t\t  line-height: 28px;\r\n\t\t\t  letter-spacing: .025rem;\n}\nh1{\r\n\t\t\t  font-family: 'Roboto', sans-serif;\r\n\t\t\t  color: #fff;\r\n\t\t\t  font-weight: 600;\r\n\t\t\t  font-size: 6rem!important;\r\n    \t\t\tline-height: 7rem!important;\r\n\t\t\t   letter-spacing: .9rem;\n}\n.smallHeading{\r\n\t\t\t  color: #fff;\r\n\t\t\t  font-size: 1.93rem!important;\r\n    \t\tline-height: 1.5rem!important;\r\n\t\t\t  \r\n\t\t\t  font-family: 'Montserrat', sans-serif;\n}\n.designSpacing{\r\n\t\t\t  letter-spacing: 2rem;\n}\n.underline{\r\n\t\t\t\r\n\t\t\t  background-color: #ff1a56 !important;\r\n\t\t\t \r\n\t\t\t  font-size: 12px;\r\n\t\t\t \r\n\t\t\t  color:  #ff1a56 !important;\n}\np{\r\n\t\t\t  font-family: 'Open Sans', sans-serif;\r\n\t\t\t  font-size: 15px;\r\n\t\t\t  line-height: 30px;\r\n\t\t\t  color: #fff;\r\n\t\t\t  margin-top: 1%;\n}\n.submit{\r\n\r\nbackground-color: #000;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n\t\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n\t\r\n\t -webkit-transition: all 0.4s ease-in-out;\r\n\t\r\n\t transition: all 0.4s ease-in-out;\n}\n.submit:hover{\r\n\r\nbackground-color: #222;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n\t\r\n\t -webkit-transition: all 0.4s ease-in-out;\r\n\t\r\n\t transition: all 0.4s ease-in-out;\n}\r\n", ""]);
 
 // exports
 
@@ -46680,6 +46680,28 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -46695,9 +46717,50 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-8 col-lg-7" }, [
+          _c("small", [
+            _c("h1", { staticClass: "smallHeading" }, [
+              _vm._v("WELCOME TO COLLAB/RATE")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("h1", [
+            _vm._v("CREATE, "),
+            _c("span", { staticClass: "designSpacing" }, [_vm._v("DESIGN...")]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v("GET INSPIRE!")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "underline" }, [
+            _vm._v("...................................")
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500."
+            )
+          ]),
+          _vm._v(" "),
+          _c("button", { staticClass: "submit" }, [_vm._v("Get Started!")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-sm-3 col-lg-4" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-sm-1 col-lg-1" })
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -46793,7 +46856,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\nbody{\r\n\t\r\n\tbackground-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-size: cover;\r\n\tmargin-bottom:40%;\n}\n.loginVue{\r\ncolor:#fff;\n}\n.div-center {\r\n  width: 400px;\r\n  height: 400px;\r\n  background-color: #fff;\r\n  position: absolute;\r\n  left: 0;\r\n  right: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n  margin: auto;\r\n  max-width: 100%;\r\n  max-height: 100%;\r\n  overflow: auto;\r\n  padding: 1em 2em;\r\n  border-bottom: 2px solid #ccc;\r\n  display: table;\r\n  -webkit-box-shadow: 7px 9px 15px 5px rgba(0,0,0,0.11); \r\nbox-shadow: 7px 9px 15px 5px rgba(0,0,0,0.11);\n}\ndiv.content {\r\n  display: table-cell;\r\n  vertical-align: middle;\n}\n.submit{\r\nmargin-left:33%;\r\nbackground-color: #000;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n\tmargin-top:3%;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n\t\r\n\t -webkit-transition: all 0.4s ease-in-out;\r\n\t\r\n\t transition: all 0.4s ease-in-out;\n}\n.submit:hover{\r\nmargin-left:33%;\r\nbackground-color: #222;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n\t\r\n\t -webkit-transition: all 0.4s ease-in-out;\r\n\t\r\n\t transition: all 0.4s ease-in-out;\n}\r\n", ""]);
 
 // exports
 
@@ -46807,6 +46870,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_LoggedoutNavBar_vue__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_LoggedoutNavBar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_LoggedoutNavBar_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -46991,81 +47071,99 @@ var render = function() {
       _c("loggedout-navbar"),
       _vm._v(" "),
       _c("div", { staticClass: "container" }, [
-        _c("p", [_vm._v("Login Vue")]),
+        _c("p", { staticClass: "loginVue" }, [_vm._v("Login Vue")]),
         _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c(
-            "label",
-            { staticClass: "label-control", attrs: { for: "email" } },
-            [_vm._v("Email")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.email,
-                expression: "email"
-              }
-            ],
-            staticClass: "form-control",
-            attrs: { type: "text", id: "email", name: "email", value: "" },
-            domProps: { value: _vm.email },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.email = $event.target.value
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c(
-            "label",
-            { staticClass: "label-control", attrs: { for: "password" } },
-            [_vm._v("Password")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.password,
-                expression: "password"
-              }
-            ],
-            staticClass: "form-control",
-            attrs: {
-              type: "text",
-              name: "password",
-              id: "password",
-              value: ""
-            },
-            domProps: { value: _vm.password },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.password = $event.target.value
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            attrs: { type: "button", name: "button" },
-            on: { click: _vm.loginUser }
-          },
-          [_vm._v("Login")]
-        )
+        _c("div", { staticClass: "div-center" }, [
+          _c("div", { staticClass: "content" }, [
+            _c("h3", [_vm._v("Login")]),
+            _vm._v(" "),
+            _c("hr"),
+            _vm._v(" "),
+            _c("form", [
+              _c("div", { staticClass: "form-group" }, [
+                _c(
+                  "label",
+                  { staticClass: "label-control", attrs: { for: "email" } },
+                  [_vm._v("Email")]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.email,
+                      expression: "email"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    id: "email",
+                    name: "email",
+                    value: ""
+                  },
+                  domProps: { value: _vm.email },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.email = $event.target.value
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c(
+                  "label",
+                  { staticClass: "label-control", attrs: { for: "password" } },
+                  [_vm._v("Password")]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.password,
+                      expression: "password"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "password",
+                    id: "password",
+                    value: ""
+                  },
+                  domProps: { value: _vm.password },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.password = $event.target.value
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "submit",
+                  attrs: { type: "button", name: "button" },
+                  on: { click: _vm.loginUser }
+                },
+                [_vm._v("Login")]
+              ),
+              _vm._v(" "),
+              _c("hr")
+            ])
+          ])
+        ])
       ])
     ],
     1
@@ -47469,7 +47567,7 @@ exports = module.exports = __webpack_require__(1)(false);
 exports.push([module.i, "@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);", ""]);
 
 // module
-exports.push([module.i, "\nbody {\r\n    margin: 0;\r\n    padding:0;/*added this*/\r\n    font-family: Helvetica, Arial, san-serif;\r\n    font-size: 16px;\r\n    color: #35342f;\n}\nimg {border:none;\n}\na {text-decoration:none;\n}\nh2{\r\n    font-size: 22px;\r\n    font-weight: 700;\r\n    text-transform: uppercase;\r\n\tletter-spacing: 5px;\r\n\tline-height: 27px;\r\n    margin:0;\r\n    /*margin-bottom: 20px; moved to title div*/\r\n    /*background:pink;/*for testing*/\n}\np{\r\nfont-size: 14px;\r\nline-height:22px;\n}\n.pull-center{\r\n\tmargin-left:25%;\n}\r\n\r\n/* Container holding the image and the text */\n.container-img {\r\n    position: relative;\r\n    text-align: center;\r\n    color: white;\n}\r\n\r\n\r\n\r\n/* Centered text */\n.centered {\r\n    position: absolute;\r\n    top: 80%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n            transform: translate(-50%, -50%);\n}\r\n\r\n\r\n/*social links*/\n.footer-social-links\r\n{\r\n    font-size: 14px;\r\n  text-align: center;\r\n  margin-top: 10%;\r\n   margin-bottom: 10%;\n}\n.footer-social-links a\r\n{\r\n    width: 25px;\r\n    height: 25px;\r\n    line-height: 25px !important;\r\n    position: relative;\r\n    margin: 0 5px;\r\n    text-align: center;\r\n    display: inline-block;\r\n    color: #111;\r\n\r\n    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);\r\n    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);\n}\n.footer-social-links a i,\r\n.footer-social-links a span{\r\n    position: relative;\r\n    top: 2px;\r\n    left: 1px;\n}\n.footer-social-links a:before{\r\n    content: \"\";\r\n    display: inline-block;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    border: 1px solid #111;\r\n    border-radius: 2px;\r\n\r\n    -webkit-transform: rotate(45deg);\r\n    transform: rotate(45deg);\r\n\r\n    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);\r\n    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);\n}\n.footer-social-links a:hover{\r\n    color: #fff;\n}\n.footer-social-links a:hover:before{\r\n    background: #111;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.editHover:hover{\r\nbackground-color:blue;\n}\nbody {\r\n    margin: 0;\r\n    padding:0;/*added this*/\r\n    font-family: Helvetica, Arial, san-serif;\r\n    font-size: 16px;\r\n    color: #35342f;\r\n\tbackground-color:#d9d9d9;\n}\nimg {border:none;\n}\na {text-decoration:none;\n}\nh2{\r\n    font-size: 22px;\r\n    font-weight: 700;\r\n    text-transform: uppercase;\r\n\tletter-spacing: 5px;\r\n\tline-height: 27px;\r\n    margin:0;\r\n    /*margin-bottom: 20px; moved to title div*/\r\n    /*background:pink;/*for testing*/\n}\np{\r\nfont-size: 14px;\r\nline-height:22px;\n}\n.pull-center{\r\n\tmargin-left:25%;\n}\r\n\r\n/* Container holding the image and the text */\n.container-img {\r\n    position: relative;\r\n    text-align: center;\r\n    color: white;\n}\n.img-responsive {\r\n  min-width:305px;\r\n  min-height:300px;\n}\r\n\r\n\r\n/* Centered text */\n.centered {\r\n    position: absolute;\r\n    top: 80%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n            transform: translate(-50%, -50%);\n}\r\n\r\n\r\n/*social links*/\n.footer-social-links\r\n{\r\n    font-size: 14px;\r\n  text-align: center;\r\n  margin-top: 10%;\r\n   margin-bottom: 10%;\n}\n.footer-social-links a\r\n{\r\n    width: 25px;\r\n    height: 25px;\r\n    line-height: 25px !important;\r\n    position: relative;\r\n    margin: 0 5px;\r\n    text-align: center;\r\n    display: inline-block;\r\n    color: #111;\r\n    \r\n    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); \r\n    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);\n}\n.footer-social-links a i,\r\n.footer-social-links a span{\r\n    position: relative;\r\n    top: 2px;\r\n    left: 1px;\n}\n.footer-social-links a:before{\r\n    content: \"\";\r\n    display: inline-block;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    border: 1px solid #111;\r\n    border-radius: 2px;\r\n    \r\n    -webkit-transform: rotate(45deg);\r\n    transform: rotate(45deg);\r\n    \r\n    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); \r\n    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);\n}\n.footer-social-links a:hover{\r\n    color: #fff;\n}\n.footer-social-links a:hover:before{\r\n    background: #913D88;\n}\r\n", ""]);
 
 // exports
 
@@ -47491,6 +47589,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Details___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__Details__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_axios__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_axios__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -48150,6 +48259,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -48218,7 +48328,9 @@ var render = function() {
                 _vm._v(" "),
                 _c("div", { staticClass: "project-overlay" }, [
                   _c("div", { staticClass: "project-item" }, [
-                    _c("h3", [_vm._v(_vm._s(_vm.project.name))])
+                    _c("h3", [_vm._v(_vm._s(_vm.project.name))]),
+                    _vm._v(" "),
+                    _c("small", [_vm._v(_vm._s(_vm.project.description))])
                   ])
                 ])
               ]
@@ -48289,8 +48401,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "projects-view" }, [
-    _c("h1", [_vm._v("Projects")]),
-    _vm._v(" "),
     _c(
       "div",
       { staticClass: "row" },
@@ -48412,20 +48522,36 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "container-fluid" }, [
         _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "container-img" }, [
-            _c("img", {
-              staticClass: "img-responsive",
-              attrs: {
-                src:
-                  _vm.path + "/storage/img/profile_img/" + _vm.user.profile_img,
-                alt: ""
-              }
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "centered" }, [
-              _c("h2", [_vm._v(_vm._s(_vm.user.name))])
-            ])
-          ]),
+          _c(
+            "div",
+            { staticClass: "container-img" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass: "editHover",
+                  attrs: { to: { name: "profile_edit" } }
+                },
+                [
+                  _c("img", {
+                    staticClass: "img-responsive fixed-profile",
+                    attrs: {
+                      src:
+                        _vm.path +
+                        "/storage/img/profile_img/" +
+                        _vm.user.profile_img,
+                      alt: ""
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "centered" }, [
+                _c("h2", [_vm._v(_vm._s(_vm.user.name))])
+              ])
+            ],
+            1
+          ),
           _vm._v(" "),
           _c("div", { staticClass: "panel panel-default" }, [
             _c("div", { staticClass: "panel-body" }, [
@@ -48457,9 +48583,37 @@ var render = function() {
                 _vm._v(" "),
                 _c("hr"),
                 _vm._v(" "),
-                _vm._m(2),
+                _c("small", [
+                  _c("h4", [
+                    _vm._v("Social Networks \n\t\t   \n\t\t   "),
+                    _c(
+                      "a",
+                      { staticClass: "pull-center" },
+                      [
+                        _c(
+                          "router-link",
+                          { attrs: { to: { name: "social_edit" } } },
+                          [
+                            _c("div", { staticClass: "addIcon" }, [
+                              _c("small", [_vm._v("Edit links")]),
+                              _c(
+                                "span",
+                                {
+                                  staticClass: " addIcon pull-right",
+                                  staticStyle: { "font-size": "1.5em" }
+                                },
+                                [_vm._v("+")]
+                              )
+                            ])
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  ])
+                ]),
                 _vm._v(" "),
-                _vm._m(3),
+                _vm._m(2),
                 _vm._v(" "),
                 _c("hr")
               ]),
@@ -48511,12 +48665,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("small", [_c("h4", [_vm._v("Location")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("small", [_c("h4", [_vm._v("Social Networks")])])
   },
   function() {
     var _vm = this
@@ -48640,7 +48788,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n#reg .col-md-6,\r\n#reg .col-md-12 {\r\n  padding-left: 0px;\n}\n#reg .form-control {\r\n  border: 1px solid #f0f0f0;\r\n  -webkit-box-shadow: none;\r\n          box-shadow: none;\r\n  margin-bottom: 10px;\r\n  -webkit-transition: all 0.4s ease-in-out;\r\n  transition: all 0.4s ease-in-out;\n}\n#reg .form-control:hover {\r\n  border-color: #777;\n}\n#reg input,\r\n#reg select {\r\n  height: 50px;\n}\n#reg .submit {\r\n  background: #222;\r\n  border-radius: 100px;\r\n  border: none;\r\n  color: #ffffff;\r\n  font-weight: 400;\r\n  -webkit-transition: all 0.4s ease-in-out;\r\n  transition: all 0.4s ease-in-out;\n}\n#reg .submit:hover {\r\n  background: #000;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.profile-border{\r\n\t\t\t  border-right:.5px solid #fff;\n}\n#reg .col-md-6,\r\n#reg .col-md-12 {\r\n  padding-left: 0px;\n}\n#reg .form-control {\r\n  border: 1px solid #f0f0f0;\r\n  -webkit-box-shadow: none;\r\n          box-shadow: none;\r\n  margin-bottom: 10px;\r\n  -webkit-transition: all 0.4s ease-in-out;\r\n  transition: all 0.4s ease-in-out;\n}\n#reg .form-control:hover {\r\n  border-color: #777;\n}\n#reg input,\r\n#reg select {\r\n  height: 50px;\n}\n#reg .submit {\r\n  background: #222;\r\n  border-radius: 100px;\r\n  border: none;\r\n  color: #ffffff;\r\n  font-weight: 400;\r\n  -webkit-transition: all 0.4s ease-in-out;\r\n  transition: all 0.4s ease-in-out;\n}\n#reg .submit:hover {\r\n  background: #000;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -48652,6 +48800,7 @@ exports.push([module.i, "\n#reg .col-md-6,\r\n#reg .col-md-12 {\r\n  padding-lef
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(3);
+//
 //
 //
 //
@@ -48891,368 +49040,366 @@ var render = function() {
     _c("div", [
       _vm._m(0),
       _vm._v(" "),
-      _c("div", { staticClass: "col-md-offset-1 col-md-10 col-sm-12" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "form-group" }, [
-            _c("label", {
-              staticClass: "label-control",
-              attrs: { for: "profile_img" }
-            }),
-            _vm._v(" "),
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "form-group" }, [
+          _c("label", {
+            staticClass: "label-control",
+            attrs: { for: "profile_img" }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: {
+              type: "file",
+              id: "profile_img",
+              name: "profile_img",
+              value: ""
+            },
+            on: { change: _vm.onFileChanged }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group" }, [
+          _c("label", { attrs: { for: "disable-img" } }, [
+            _vm._v("\n          Keep Currnent image\n          "),
             _c("input", {
-              staticClass: "form-control",
-              attrs: {
-                type: "file",
-                id: "profile_img",
-                name: "profile_img",
-                value: ""
-              },
-              on: { change: _vm.onFileChanged }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("label", { attrs: { for: "disable-img" } }, [
-              _vm._v("\n          Keep Currnent image\n          "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.disableImg,
-                    expression: "disableImg"
-                  }
-                ],
-                attrs: {
-                  type: "checkbox",
-                  name: "disable-img",
-                  id: "disable-img"
-                },
-                domProps: {
-                  checked: Array.isArray(_vm.disableImg)
-                    ? _vm._i(_vm.disableImg, null) > -1
-                    : _vm.disableImg
-                },
-                on: {
-                  change: function($event) {
-                    var $$a = _vm.disableImg,
-                      $$el = $event.target,
-                      $$c = $$el.checked ? true : false
-                    if (Array.isArray($$a)) {
-                      var $$v = null,
-                        $$i = _vm._i($$a, $$v)
-                      if ($$el.checked) {
-                        $$i < 0 && (_vm.disableImg = $$a.concat([$$v]))
-                      } else {
-                        $$i > -1 &&
-                          (_vm.disableImg = $$a
-                            .slice(0, $$i)
-                            .concat($$a.slice($$i + 1)))
-                      }
-                    } else {
-                      _vm.disableImg = $$c
-                    }
-                  }
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.disableImg,
+                  expression: "disableImg"
                 }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-            _c("div", { staticClass: "form-group" }, [
-              _c(
-                "label",
-                { staticClass: "label-control", attrs: { for: "name" } },
-                [_vm._v("Name")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.user.name,
-                    expression: "user.name"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { type: "text", id: "name", name: "name", value: "" },
-                domProps: { value: _vm.user.name },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.user, "name", $event.target.value)
-                  }
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-            _c("div", { staticClass: "form-group" }, [
-              _c(
-                "label",
-                { staticClass: "label-control", attrs: { for: "skill" } },
-                [_vm._v("Skill")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.user.skill,
-                    expression: "user.skill"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { type: "text", name: "skill", id: "skill", value: "" },
-                domProps: { value: _vm.user.skill },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.user, "skill", $event.target.value)
-                  }
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-            _c("div", { staticClass: "form-group" }, [
-              _c(
-                "label",
-                { staticClass: "label-control", attrs: { for: "country" } },
-                [_vm._v("Country")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.user.country,
-                    expression: "user.country"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  name: "country",
-                  id: "country",
-                  value: ""
-                },
-                domProps: { value: _vm.user.country },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.user, "country", $event.target.value)
-                  }
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-            _c("div", { staticClass: "form-group" }, [
-              _c(
-                "label",
-                { staticClass: "label-control", attrs: { for: "city" } },
-                [_vm._v("City")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.user.city,
-                    expression: "user.city"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { type: "text", name: "city", id: "city", value: "" },
-                domProps: { value: _vm.user.city },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.user, "city", $event.target.value)
-                  }
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-            _c("div", { staticClass: "form-group" }, [
-              _c(
-                "label",
-                { staticClass: "label-control", attrs: { for: "profession" } },
-                [_vm._v("Profession")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.user.profession,
-                    expression: "user.profession"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  name: "profession",
-                  id: "profession",
-                  value: ""
-                },
-                domProps: { value: _vm.user.profession },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.user, "profession", $event.target.value)
-                  }
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-            _c("div", { staticClass: "form-group" }, [
-              _c(
-                "label",
-                { staticClass: "label-control", attrs: { for: "interest" } },
-                [_vm._v("Main Interest")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.user.main_intrest,
-                    expression: "user.main_intrest"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  name: "interest",
-                  id: "interest",
-                  value: ""
-                },
-                domProps: { value: _vm.user.main_intrest },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.user, "main_intrest", $event.target.value)
-                  }
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-12 col-sm-12" }, [
-            _c("div", { staticClass: "form-group" }, [
-              _c(
-                "label",
-                { staticClass: "label-control", attrs: { for: "biography" } },
-                [_vm._v("Biography")]
-              ),
-              _vm._v(" "),
-              _c("textarea", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.user.biography,
-                    expression: "user.biography"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { rows: "5", placeholder: "Biography" },
-                domProps: { value: _vm.user.biography },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.user, "biography", $event.target.value)
-                  }
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c(
-              "label",
-              { staticClass: "label-control" },
-              [
-                _vm._v("Role\n          "),
-                _vm._v(" "),
-                _vm._l(_vm.roles, function(role) {
-                  return _c("label", { staticClass: "checkbox-inline" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.user.role_id,
-                          expression: "user.role_id"
-                        }
-                      ],
-                      attrs: { type: "radio", name: "role" },
-                      domProps: {
-                        value: role.id,
-                        checked: _vm._q(_vm.user.role_id, role.id)
-                      },
-                      on: {
-                        change: function($event) {
-                          _vm.$set(_vm.user, "role_id", role.id)
-                        }
-                      }
-                    }),
-                    _vm._v(_vm._s(role.title) + "\n          ")
-                  ])
-                })
               ],
-              2
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-2 col-sm-4" }, [
-            _c(
-              "button",
-              {
-                staticClass: "form-control pull-center text-center submit",
-                attrs: { type: "button", name: "button" },
-                on: { click: _vm.editProfile }
+              attrs: {
+                type: "checkbox",
+                name: "disable-img",
+                id: "disable-img"
               },
-              [_vm._v("Update")]
-            )
+              domProps: {
+                checked: Array.isArray(_vm.disableImg)
+                  ? _vm._i(_vm.disableImg, null) > -1
+                  : _vm.disableImg
+              },
+              on: {
+                change: function($event) {
+                  var $$a = _vm.disableImg,
+                    $$el = $event.target,
+                    $$c = $$el.checked ? true : false
+                  if (Array.isArray($$a)) {
+                    var $$v = null,
+                      $$i = _vm._i($$a, $$v)
+                    if ($$el.checked) {
+                      $$i < 0 && (_vm.disableImg = $$a.concat([$$v]))
+                    } else {
+                      $$i > -1 &&
+                        (_vm.disableImg = $$a
+                          .slice(0, $$i)
+                          .concat($$a.slice($$i + 1)))
+                    }
+                  } else {
+                    _vm.disableImg = $$c
+                  }
+                }
+              }
+            })
           ])
         ]),
         _vm._v(" "),
-        _c("pre", [_vm._v("      " + _vm._s(_vm.user) + "\n    ")]),
+        _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "label",
+              { staticClass: "label-control", attrs: { for: "name" } },
+              [_vm._v("Name")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.user.name,
+                  expression: "user.name"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", id: "name", name: "name", value: "" },
+              domProps: { value: _vm.user.name },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.user, "name", $event.target.value)
+                }
+              }
+            })
+          ])
+        ]),
         _vm._v(" "),
-        _c("pre", [_vm._v("      " + _vm._s(_vm.disableImg) + "\n    ")])
-      ])
+        _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "label",
+              { staticClass: "label-control", attrs: { for: "skill" } },
+              [_vm._v("Skill")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.user.skill,
+                  expression: "user.skill"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", name: "skill", id: "skill", value: "" },
+              domProps: { value: _vm.user.skill },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.user, "skill", $event.target.value)
+                }
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "label",
+              { staticClass: "label-control", attrs: { for: "country" } },
+              [_vm._v("Country")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.user.country,
+                  expression: "user.country"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: {
+                type: "text",
+                name: "country",
+                id: "country",
+                value: ""
+              },
+              domProps: { value: _vm.user.country },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.user, "country", $event.target.value)
+                }
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "label",
+              { staticClass: "label-control", attrs: { for: "city" } },
+              [_vm._v("City")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.user.city,
+                  expression: "user.city"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", name: "city", id: "city", value: "" },
+              domProps: { value: _vm.user.city },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.user, "city", $event.target.value)
+                }
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "label",
+              { staticClass: "label-control", attrs: { for: "profession" } },
+              [_vm._v("Profession")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.user.profession,
+                  expression: "user.profession"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: {
+                type: "text",
+                name: "profession",
+                id: "profession",
+                value: ""
+              },
+              domProps: { value: _vm.user.profession },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.user, "profession", $event.target.value)
+                }
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "label",
+              { staticClass: "label-control", attrs: { for: "interest" } },
+              [_vm._v("Main Interest")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.user.main_intrest,
+                  expression: "user.main_intrest"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: {
+                type: "text",
+                name: "interest",
+                id: "interest",
+                value: ""
+              },
+              domProps: { value: _vm.user.main_intrest },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.user, "main_intrest", $event.target.value)
+                }
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-12 col-sm-12" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "label",
+              { staticClass: "label-control", attrs: { for: "biography" } },
+              [_vm._v("Biography")]
+            ),
+            _vm._v(" "),
+            _c("textarea", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.user.biography,
+                  expression: "user.biography"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { rows: "5", placeholder: "Biography" },
+              domProps: { value: _vm.user.biography },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.user, "biography", $event.target.value)
+                }
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group" }, [
+          _c(
+            "label",
+            { staticClass: "label-control" },
+            [
+              _vm._v("Role\n          "),
+              _vm._v(" "),
+              _vm._l(_vm.roles, function(role) {
+                return _c("label", { staticClass: "checkbox-inline" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.user.role_id,
+                        expression: "user.role_id"
+                      }
+                    ],
+                    attrs: { type: "radio", name: "role" },
+                    domProps: {
+                      value: role.id,
+                      checked: _vm._q(_vm.user.role_id, role.id)
+                    },
+                    on: {
+                      change: function($event) {
+                        _vm.$set(_vm.user, "role_id", role.id)
+                      }
+                    }
+                  }),
+                  _vm._v(_vm._s(role.title) + "\n          ")
+                ])
+              })
+            ],
+            2
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-2 col-sm-4" }, [
+          _c(
+            "button",
+            {
+              staticClass: "form-control pull-center text-center submit",
+              attrs: { type: "button", name: "button" },
+              on: { click: _vm.editProfile }
+            },
+            [_vm._v("Update")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("pre", [_vm._v("      " + _vm._s(_vm.user) + "\n    ")]),
+      _vm._v(" "),
+      _c("pre", [_vm._v("      " + _vm._s(_vm.disableImg) + "\n    ")])
     ])
   ])
 }
@@ -49834,7 +49981,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -49848,6 +49995,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_LoggedinNavBar_vue__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_LoggedinNavBar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_LoggedinNavBar_vue__);
+//
 //
 //
 //
@@ -49990,159 +50138,145 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("loggedin-navbar"),
-      _vm._v(" "),
-      _c("p", [_vm._v("Edit Project")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "form-group" }, [
-          _c(
-            "label",
-            { staticClass: "label-control", attrs: { for: "cover_img" } },
-            [_vm._v("Cover Image:")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: {
-              type: "file",
-              id: "cover_img",
-              name: "cover_img",
-              value: ""
-            },
-            on: { change: _vm.onFileChanged }
-          }),
-          _vm._v(" "),
-          _c("label", { attrs: { for: "disable-img" } }, [
-            _vm._v("\n        Keep Currnent image\n        "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.disableImg,
-                  expression: "disableImg"
-                }
-              ],
-              attrs: {
-                type: "checkbox",
-                name: "disable-img",
-                id: "disable-img"
-              },
-              domProps: {
-                checked: Array.isArray(_vm.disableImg)
-                  ? _vm._i(_vm.disableImg, null) > -1
-                  : _vm.disableImg
-              },
-              on: {
-                change: function($event) {
-                  var $$a = _vm.disableImg,
-                    $$el = $event.target,
-                    $$c = $$el.checked ? true : false
-                  if (Array.isArray($$a)) {
-                    var $$v = null,
-                      $$i = _vm._i($$a, $$v)
-                    if ($$el.checked) {
-                      $$i < 0 && (_vm.disableImg = $$a.concat([$$v]))
-                    } else {
-                      $$i > -1 &&
-                        (_vm.disableImg = $$a
-                          .slice(0, $$i)
-                          .concat($$a.slice($$i + 1)))
-                    }
-                  } else {
-                    _vm.disableImg = $$c
-                  }
-                }
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c(
-            "label",
-            { staticClass: "label-control", attrs: { for: "name" } },
-            [_vm._v("Name:")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.project.name,
-                expression: "project.name"
-              }
-            ],
-            staticClass: "form-control",
-            attrs: { type: "text", id: "name", name: "name", value: "" },
-            domProps: { value: _vm.project.name },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.$set(_vm.project, "name", $event.target.value)
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c(
-            "label",
-            { staticClass: "label-control", attrs: { for: "skill" } },
-            [_vm._v("Description:")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.project.description,
-                expression: "project.description"
-              }
-            ],
-            staticClass: "form-control",
-            attrs: {
-              type: "text",
-              name: "description",
-              id: "description",
-              value: ""
-            },
-            domProps: { value: _vm.project.description },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.$set(_vm.project, "description", $event.target.value)
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
+  return _c("div", [
+    _c("p", [_vm._v("Edit Project")]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "form-group" }, [
         _c(
-          "button",
-          {
-            attrs: { type: "button", name: "button" },
-            on: { click: _vm.editProject }
+          "label",
+          { staticClass: "label-control", attrs: { for: "cover_img" } },
+          [_vm._v("Cover Image:")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "file",
+            id: "cover_img",
+            name: "cover_img",
+            value: ""
           },
-          [_vm._v("Edit Project")]
-        )
+          on: { change: _vm.onFileChanged }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "disable-img" } }, [
+          _vm._v("\n        Keep Currnent image\n        "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.disableImg,
+                expression: "disableImg"
+              }
+            ],
+            attrs: { type: "checkbox", name: "disable-img", id: "disable-img" },
+            domProps: {
+              checked: Array.isArray(_vm.disableImg)
+                ? _vm._i(_vm.disableImg, null) > -1
+                : _vm.disableImg
+            },
+            on: {
+              change: function($event) {
+                var $$a = _vm.disableImg,
+                  $$el = $event.target,
+                  $$c = $$el.checked ? true : false
+                if (Array.isArray($$a)) {
+                  var $$v = null,
+                    $$i = _vm._i($$a, $$v)
+                  if ($$el.checked) {
+                    $$i < 0 && (_vm.disableImg = $$a.concat([$$v]))
+                  } else {
+                    $$i > -1 &&
+                      (_vm.disableImg = $$a
+                        .slice(0, $$i)
+                        .concat($$a.slice($$i + 1)))
+                  }
+                } else {
+                  _vm.disableImg = $$c
+                }
+              }
+            }
+          })
+        ])
       ]),
       _vm._v(" "),
-      _c("pre", [_vm._v("    " + _vm._s(_vm.project) + "\n  ")]),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { staticClass: "label-control", attrs: { for: "name" } }, [
+          _vm._v("Name:")
+        ]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.project.name,
+              expression: "project.name"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: { type: "text", id: "name", name: "name", value: "" },
+          domProps: { value: _vm.project.name },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.project, "name", $event.target.value)
+            }
+          }
+        })
+      ]),
       _vm._v(" "),
-      _c("pre", [_vm._v("    " + _vm._s(_vm.disableImg) + "\n  ")])
-    ],
-    1
-  )
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { staticClass: "label-control", attrs: { for: "skill" } }, [
+          _vm._v("Description:")
+        ]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.project.description,
+              expression: "project.description"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            name: "description",
+            id: "description",
+            value: ""
+          },
+          domProps: { value: _vm.project.description },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.project, "description", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          attrs: { type: "button", name: "button" },
+          on: { click: _vm.editProject }
+        },
+        [_vm._v("Edit Project")]
+      )
+    ]),
+    _vm._v(" "),
+    _c("pre", [_vm._v("    " + _vm._s(_vm.project) + "\n  ")]),
+    _vm._v(" "),
+    _c("pre", [_vm._v("    " + _vm._s(_vm.disableImg) + "\n  ")])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -50240,7 +50374,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.chatlog{\r\nbackground:#fff;\n}\nh2 .titles{\r\nmargin-bottom:10%;\n}\n.description{\r\n\tline-height:30px;\r\n\tfont-size:14px;\n}\n.rateBtn{\r\n\tmargin-left:40%;\r\n\tborder-radius: 50%;\r\n\tbackground:#663399;\r\n\theight: 100px;\r\n\twidth: 100px;\r\n\tcolor:#fff;\n}\n.rBtnText{\r\n    margin-top: 30px;\n}\n.rateBtn:hover{\r\n\t\r\n\tbackground:#BF55EC;\r\n\t\r\n\tcolor:#fff;\n}\n.showProjectImg \r\n{\r\n\twidth:100%;\r\n\tmin-height:300px;\n}\n.projectBackground\r\n{\r\n\tbackground:white;\n}\n.col-md-10 img \r\n{\r\n\t\r\n\twidth:100%;\r\n\theight:100%;\n}\n.showProjectImg{\r\n\r\nmin-height:600px;\n}\r\n", ""]);
+exports.push([module.i, "\nhr {\r\n\tmargin-top:15px;\n}\n.chatlog{\r\nbackground:#fff;\n}\nh2 .titles{\r\nmargin-bottom:10%;\n}\n.description{\r\n\tline-height:30px;\r\n\tfont-size:14px;\n}\n.rateBtn{\r\n\tmargin-left:40%;\r\n\tborder-radius: 50%;\r\n\tbackground:#663399;\r\n\theight: 100px;\r\n\twidth: 100px;\r\n\tcolor:#fff;\n}\n.rBtnText{\r\n    margin-top: 30px;\n}\n.rateBtn:hover{\r\n\t\r\n\tbackground:#BF55EC;\r\n\t\r\n\tcolor:#fff;\n}\n.showProjectImg \r\n{\r\n\twidth:100%;\r\n\tmin-height:300px;\n}\n.projectBackground\r\n{\r\n\tbackground:white;\n}\n.col-md-10 img \r\n{\r\n\t\r\n\twidth:100%;\r\n\theight:100%;\n}\n.showProjectImg{\r\n\r\nmin-height:600px;\n}\r\n", ""]);
 
 // exports
 
@@ -50258,6 +50392,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Comments_ProjectCommentComposer_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Comments_ProjectCommentComposer_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ProjectRating_vue__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ProjectRating_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__ProjectRating_vue__);
+//
+//
+//
 //
 //
 //
@@ -50710,6 +50847,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 // import ProjectAction from './ProjectCommentActions.vue';
@@ -50771,12 +50909,10 @@ var render = function() {
     _c("div", { staticClass: "comment-footer" }, [
       _c("div", { staticClass: "comment-info" }, [
         _c("span", { staticClass: "comment-author" }, [
-          _c("em", [_vm._v(_vm._s(_vm.user.name))])
+          _c("small", [_vm._v(" Comment By : " + _vm._s(_vm.user.name))])
         ]),
         _vm._v(" "),
-        _c("span", { staticClass: "comment-date" }, [
-          _vm._v(_vm._s(_vm.project_comment.created_at))
-        ])
+        _c("hr")
       ])
     ])
   ])
@@ -50909,7 +51045,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.pull-center {\r\n    margin-left: 35%;\n}\r\n", ""]);
 
 // exports
 
@@ -50921,6 +51057,9 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(3);
+//
+//
+//
 //
 //
 //
@@ -51001,6 +51140,8 @@ var render = function() {
   return this.$auth.isAuthenticated()
     ? _c("div", { staticClass: "comment-form" }, [
         _c("div", { staticClass: "form" }, [
+          _c("h3", { staticClass: "pull-center" }, [_vm._v("Post A Comment")]),
+          _vm._v(" "),
           _c("div", { staticClass: "form-row" }, [
             _c("textarea", {
               directives: [
@@ -51011,8 +51152,8 @@ var render = function() {
                   expression: "comment.comment"
                 }
               ],
-              staticClass: "input",
-              attrs: { placeholder: "Add comment...", required: "" },
+              staticClass: "input form-control",
+              attrs: { rows: "5", placeholder: "Add comment...", required: "" },
               domProps: { value: _vm.comment.comment },
               on: {
                 input: function($event) {
@@ -51033,9 +51174,11 @@ var render = function() {
               : _vm._e()
           ]),
           _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
           _c("div", { staticClass: "form-row" }, [
             _c("input", {
-              staticClass: "btn",
+              staticClass: "btn pull-center",
               attrs: { type: "button", value: "Add Comment" },
               on: {
                 click: function($event) {
@@ -51389,6 +51532,21 @@ var render = function() {
                 "div",
                 { staticClass: "panel-body" },
                 [
+                  _c(
+                    "router-link",
+                    {
+                      attrs: {
+                        to: {
+                          name: "project_edit",
+                          params: { id: _vm.project.id }
+                        }
+                      }
+                    },
+                    [_vm._v("Edit Project")]
+                  ),
+                  _vm._v(" "),
+                  _c("button", { on: { click: function($event) {} } }),
+                  _vm._v(" "),
                   _c("img", {
                     staticClass: " showProjectImg",
                     attrs: {
@@ -51401,6 +51559,15 @@ var render = function() {
                   }),
                   _vm._v(" "),
                   _c("hr"),
+                  _vm._v(" "),
+                  _c("h2", [_c("small", [_vm._v("Project Rating :")])]),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("project-rating", {
+                    attrs: { project: _vm.project },
+                    on: { updateProjectRating: _vm.updateProjectRating }
+                  }),
                   _vm._v(" "),
                   _c("project-comment-composer", {
                     attrs: { projectId: _vm.project.id },
@@ -51438,24 +51605,16 @@ var render = function() {
                   _vm._v(" "),
                   _c("hr"),
                   _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      attrs: {
-                        to: {
-                          name: "project_edit",
-                          params: { id: _vm.project.id }
-                        }
-                      }
-                    },
-                    [_vm._v("Edit Project")]
-                  ),
+                  _c("hr"),
                   _vm._v(" "),
-                  _c("button", { on: { click: function($event) {} } }),
+                  _c("h2", [
+                    _c("small", { staticClass: "titles" }, [_vm._v("Comments")])
+                  ]),
                   _vm._v(" "),
-                  _c("project-rating", {
-                    attrs: { project: _vm.project },
-                    on: { updateProjectRating: _vm.updateProjectRating }
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("project-comment-log", {
+                    attrs: { project_comments: _vm.project_comments }
                   })
                 ],
                 1
@@ -51465,16 +51624,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-md-12" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-12 chatlog" },
-                [
-                  _c("project-comment-log", {
-                    attrs: { project_comments: _vm.project_comments }
-                  })
-                ],
-                1
-              )
+              _c("div", { staticClass: "col-md-12 chatlog" })
             ])
           ])
         ])
@@ -51579,7 +51729,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.search{\r\n\tmargin-bottom:10%;\n}\n.searchFixedScale\r\n{\r\n\tmin-width:380px;\r\n\tmin-height:400px;\n}\ninput.search{\r\n  margin: 0 auto;\r\n  margin-bottom:2%;\r\n  width: 100%;\r\n  height: 45px;\r\n  padding: 0 20px;\r\n  font-size: 1rem;\r\n  border: 1px solid #D0CFCE;\r\n  outline: none;\n&:focus{\r\n    border: 1px solid #008ABF;\r\n    -webkit-transition: 0.35s ease;\r\n    transition: 0.35s ease;\r\n    color: #008ABF;\n&::-webkit-input-placeholder{\r\n      -webkit-transition: opacity 0.45s ease;\r\n      transition: opacity 0.45s ease; \r\n  \t  opacity: 0;\n}\n&::-moz-placeholder {\r\n      -webkit-transition: opacity 0.45s ease;\r\n      transition: opacity 0.45s ease; \r\n  \t  opacity: 0;\n}\n&:-ms-placeholder {\r\n     -webkit-transition: opacity 0.45s ease;\r\n     transition: opacity 0.45s ease; \r\n  \t opacity: 0;\n}\n}\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -51595,6 +51745,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_LoggedinNavBar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_LoggedinNavBar_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SearchResults_vue__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SearchResults_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__SearchResults_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -51962,44 +52121,53 @@ var render = function() {
     [
       _c("loggedin-navbar"),
       _vm._v(" "),
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.searchText,
-            expression: "searchText"
-          }
-        ],
-        attrs: {
-          type: "text",
-          id: "search-box",
-          placeholder: "Search Project Term"
-        },
-        domProps: { value: _vm.searchText },
-        on: {
-          keyup: function($event) {
-            _vm.getSelectedProjects()
-          },
-          input: function($event) {
-            if ($event.target.composing) {
-              return
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("h1", [_vm._v("Search projects")]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Please enter a search request")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.searchText,
+              expression: "searchText"
             }
-            _vm.searchText = $event.target.value
+          ],
+          staticClass: "search",
+          attrs: {
+            type: "text",
+            id: "search-box",
+            placeholder: "Search Project Term"
+          },
+          domProps: { value: _vm.searchText },
+          on: {
+            keyup: function($event) {
+              _vm.getSelectedProjects()
+            },
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.searchText = $event.target.value
+            }
           }
-        }
-      }),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "row" },
-        _vm._l(_vm.projects, function(project) {
-          return _c("search-results", {
-            key: project.id,
-            attrs: { project: project }
-          })
-        })
-      )
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col-lg-12" },
+            _vm._l(_vm.projects, function(project) {
+              return _c("search-results", {
+                key: project.id,
+                attrs: { project: project }
+              })
+            })
+          )
+        ])
+      ])
     ],
     1
   )

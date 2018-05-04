@@ -1,7 +1,8 @@
 <template>
 
   <div>
-    <loggedin-navbar></loggedin-navbar>
+    
+	
     <p>Edit Project</p>
     <div class="container">
       <div class="form-group">

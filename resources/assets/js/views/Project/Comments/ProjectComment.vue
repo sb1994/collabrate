@@ -5,9 +5,10 @@
     <div class="comment-footer">
         <div class="comment-info">
             <span class="comment-author">
-                    <em>{{user.name}}</em>
+                    <small> Comment By : {{user.name}}</small>
                 </span>
-            <span class="comment-date">{{ project_comment.created_at}}</span>
+				<hr>
+            <!--<span class="comment-date">{{ project_comment.created_at}}</span>-->
         </div>
     </div>
   </div>

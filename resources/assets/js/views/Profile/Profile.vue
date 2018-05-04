@@ -5,7 +5,9 @@
     <div class="col-md-3">
 
 	<div class="container-img">
-  <img v-bind:src='path + "/storage/img/profile_img/" + user.profile_img' class="img-responsive" alt="">
+	<router-link class="editHover" :to="{name:'profile_edit'}">
+  <img v-bind:src='path + "/storage/img/profile_img/" + user.profile_img' class="img-responsive fixed-profile" alt="">
+  </router-link>
 
   <div class="centered"><h2>{{user.name}}</h2></div>
 </div>
@@ -27,7 +29,16 @@
 
 
 
-		   <small><h4>Social Networks</h4></small>
+		     
+		   <small><h4>Social Networks 
+		   
+		   <a class="pull-center">
+              <router-link :to="{name:'social_edit'}">
+			  <div  class="addIcon"><small>Edit links</small><span  style="font-size:1.5em;" class=" addIcon pull-right">+</span>
+			  </div>
+			  </router-link>
+           </a></h4> 
+		   </small>
 
 			<div class="footer-social-links">
 		  <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -143,12 +154,20 @@ export default{
 }
 </script>
 <style>
+
+.editHover:hover{
+background-color:blue;
+
+}
+
+
 body {
     margin: 0;
     padding:0;/*added this*/
     font-family: Helvetica, Arial, san-serif;
     font-size: 16px;
     color: #35342f;
+	background-color:#d9d9d9;
 }
 
 img {border:none;}
@@ -172,6 +191,7 @@ line-height:22px;
 }
 
 
+
 .pull-center{
 	margin-left:25%;
 }
@@ -181,8 +201,14 @@ line-height:22px;
     position: relative;
     text-align: center;
     color: white;
+
 }
 
+.img-responsive {
+  min-width:305px;
+  min-height:300px;
+
+}
 
 
 /* Centered text */
@@ -200,13 +226,14 @@ line-height:22px;
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
 
+
 .footer-social-links
 {
     font-size: 14px;
   text-align: center;
   margin-top: 10%;
    margin-bottom: 10%;
-
+  
 }
 .footer-social-links a
 {
@@ -218,18 +245,18 @@ line-height:22px;
     text-align: center;
     display: inline-block;
     color: #111;
-
-    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
     -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
     transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 }
 .footer-social-links a i,
 .footer-social-links a span{
     position: relative;
     top: 2px;
-    left: 1px;
+    left: 1px; 
 }
 .footer-social-links a:before{
     content: "";
@@ -240,29 +267,28 @@ line-height:22px;
     top: 0;
     left: 0;
     border: 1px solid #111;
-
+    
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-
+    
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-
-    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
     -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
     transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-
+    
 }
 .footer-social-links a:hover{
     color: #fff;
 }
 .footer-social-links a:hover:before{
-    background: #111;
+    background: #913D88;
 }
-
 </style>
