@@ -20,7 +20,7 @@ const router = new VueRouter({
 	//mode: 'history',
 	base: __dirname,
 	routes: [
-    { path: 'project_pro/',name:'index', component: Index },
+    { path: '/',name:'index', component: Index },
 		{
 			path: '/profile',
 			name:'profile',
@@ -99,15 +99,6 @@ const router = new VueRouter({
         forVisitors:true
       }
     },
-    {
-      path:'/',
-      name:'index',
-      component: Index,
-      //meta fields used to decide who can access what page
-      meta:{
-        forVisitors:true
-      }
-    }
 	]
 })
 

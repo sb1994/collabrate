@@ -1,9 +1,9 @@
 <template lang="html">
   <div id="project-comment-actions">
     <ul class="list">
-      <li>
+      <!-- <li>
         Number of Votes:{{noOfRating}}
-      </li>
+      </li> -->
       <li v-if="canRate">
         <button class="btn btn-primary" v-on:click="addProjectRating" >Like</button>
       </li>
@@ -63,9 +63,7 @@ export default {
           console.log(error.response.status);
           console.log(error.response.headers);
         } else if (error.request) {
-          // The request was made but no response was received
-          // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-          // http.ClientRequest in node.js
+          // The request was made but no response was received 
           console.log(error.request);
         } else {
           // Something happened in setting up the request that triggered an Error
@@ -83,20 +81,15 @@ export default {
           this.canRate = false;
           // console.log(response.data.count);
           this.$emit('updateProjectRating');
-          //console.log(response.data);
-          //console.log(this.user);
         }
       ).catch(function (error) {
        if (error.response) {
-         // The request was made and the server responded with a status code
-         // that falls out of the range of 2xx
+         // The request was made and the server responded with a status code outside 200
          console.log(error.response.data);
          console.log(error.response.status);
          console.log(error.response.headers);
        } else if (error.request) {
          // The request was made but no response was received
-         // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-         // http.ClientRequest in node.js
          console.log(error.request);
        } else {
          // Something happened in setting up the request that triggered an Error
@@ -116,7 +109,7 @@ export default {
               this.canRate = false;
             }else{
               this.canRate = true;
-              getNoOfProjectRating();
+              //getNoOfProjectRating();
             }
           }
         ).catch(function (error) {
@@ -128,8 +121,6 @@ export default {
           console.log(error.response.headers);
         } else if (error.request) {
           // The request was made but no response was received
-          // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-          // http.ClientRequest in node.js
           console.log(error.request);
         } else {
           // Something happened in setting up the request that triggered an Error
@@ -146,15 +137,12 @@ export default {
       }
       ).catch(function (error) {
        if (error.response) {
-         // The request was made and the server responded with a status code
-         // that falls out of the range of 2xx
+         // The request was made and the server responded with a status code outside 200
          console.log(error.response.data);
          console.log(error.response.status);
          console.log(error.response.headers);
        } else if (error.request) {
          // The request was made but no response was received
-         // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-         // http.ClientRequest in node.js
          console.log(error.request);
        } else {
          // Something happened in setting up the request that triggered an Error

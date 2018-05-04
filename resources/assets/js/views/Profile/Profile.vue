@@ -33,10 +33,10 @@
 		   <small><h4>Social Networks 
 		   
 		   <a class="pull-center">
-              <router-link :to="{name:'social_edit'}">
+              <!-- <router-link :to="{name:'social_edit'}">
 			  <div  class="addIcon"><small>Edit links</small><span  style="font-size:1.5em;" class=" addIcon pull-right">+</span>
 			  </div>
-			  </router-link>
+			  </router-link> -->
            </a></h4> 
 		   </small>
 

@@ -1,8 +1,6 @@
 <template>
 
   <div>
-    
-	
     <p>Edit Project</p>
     <div class="container">
       <div class="form-group">
@@ -24,13 +22,6 @@
 
         <button type="button" name="button" v-on:click="editProject">Edit Project</button>
     </div>
-    <pre>
-      {{project}}
-    </pre>
-    <pre>
-      {{disableImg}}
-    </pre>
-
   </div>
 </template>
 <script>

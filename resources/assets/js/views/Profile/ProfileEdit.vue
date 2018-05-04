@@ -1,6 +1,7 @@
 <template>
 
   <section id="reg">
+      <loggedin-navbar></loggedin-navbar>
  <div>
 
 
@@ -90,24 +91,21 @@
       </div>
 	   <div class="col-md-2 col-sm-4">
 
-        <button type="button" class="form-control pull-center text-center submit" name="button"  v-on:click="editProfile">Update</button>
+        <button type="button" class="form-control pull-center text-center submit" name="button"  v-on:click="editProfile">Update Generel Profile</button>
 		 </div>
 
     </div>
-    <pre>
-      {{user}}
-    </pre>
-    <pre>
-      {{disableImg}}
-    </pre>
  
   </div>
    </section>
 </template>
 <script>
+import LoggedinNavBar from '../../components/LoggedinNavBar.vue';
 import {apiDomain} from '../../config';
 export default{
-
+  components:{
+    'loggedin-navbar':LoggedinNavBar,
+  },
   data(){
     return{
       user:{

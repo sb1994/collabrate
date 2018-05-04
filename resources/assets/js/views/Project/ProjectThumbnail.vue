@@ -11,18 +11,17 @@
     <img  v-bind:src='path + "/storage/img/cover_img/"+project.cover_img' class="img-responsive projectFixedScale" alt="">
    
 	<div class="project-overlay">
-	 
       <div class="project-item">
-		<h3>{{project.name}}</h3>
-		<small>{{project.description}}</small>
-			    </div>
-                 </div>
+        <h3>{{project.name}}</h3>
+        <small>{{project.description}}</small>
+      </div>
+  </div>
 				 
 				 </router-link>
 				<div class="task-editor">
 				<ul>
 				<!-- edit link-->
-  				<li><router-link :to="{name:'project_edit',params:{id:project.id}}" ><img src="public/icons/edit.png">edit</router-link></li>
+  				<li><router-link :to="{name:'project_edit',params:{id:project.id}}" ><img  v-bind:src="path + '/storage/img/icons/avatar.png'">edit</router-link></li>
    				<!-- delete link-->
     			<li><button v-on:click="requestDelete(project)">Delete Project</button></li>
 				</ul>
@@ -31,8 +30,7 @@
 				
 				</div>
 					
-				</div>
-    		
+        </div>
   </div>
  
    
