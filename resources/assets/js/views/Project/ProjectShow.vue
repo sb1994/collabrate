@@ -3,21 +3,57 @@
 <transition appear>
   <div id="project-view">
 
-    <p>Id: {{project.id}}</p>
-    <p>Project Name: {{project.name}}</p>
-    <p>Project description: {{project.description}}</p>
-      <!-- <p>{project.title}</p> -->
-      <img v-bind:src='path + "/storage/img/cover_img/" + project.cover_img' class="img-responsive" alt="">
-      <router-link :to="{name:'project_edit',params:{id:project.id}}" v-if="project.user_id ==this.$auth.getUserId()">Edit Project</router-link>
-      <!-- <router-link :to="{name:'project_show',params:{id:project.id}}">Show Project</router-link> -->
-      <!-- <pre>
-        {{project}}
-      </pre> -->
+  
+  
+  
+  <div class="col-md-8">
+  		
+		<div class="panel panel-default">
+
+  <div class="panel-body"> 
+  <img v-bind:src='path + "/storage/img/cover_img/" + project.cover_img' class=" showProjectImg" alt="">
+  <hr>
+  
+
+ 
+             
+  <project-comment-composer v-bind:projectId="project.id" v-on:commentAdded="updateCommentLog"></project-comment-composer>     
+		   
+  </div>
+  
+</div>
+		
+
+			
+	</div>
+	<div class="col-md-4">
+	<div class="panel panel-default">
+	<div class="panel-body"> 
+	
+	<h2><small class="titles">Project Name: </small></h2>
+	<h2>{{project.name}}</h2>
+	
+	<hr>
+	<h2><small>Project description :</small></h2>
+	
+	<hr>
+    <p class="description"> {{project.description}}</p>
+	<hr>
+	
+	   <router-link :to="{name:'project_edit',params:{id:project.id}}">Edit Project</router-link>
+      <button v-on:click=""></button>
+	  
+	  <project-rating v-bind:project="project" v-on:updateProjectRating="updateProjectRating" ></project-rating>
+	</div>
+	
+	</div>
+	</div>
       <div class="row">
         <div class="col-md-12">
-          <project-rating v-bind:project="project" v-on:updateProjectRating="updateProjectRating" ></project-rating>
-          <project-comment-composer v-bind:projectId="project.id" v-on:commentAdded="updateCommentLog"></project-comment-composer>
+          
+          <div class="col-md-12 chatlog">
           <project-comment-log v-bind:project_comments="project_comments"></project-comment-log>
+		  </div>
           <!-- <pre>{{project}}</pre> -->
         </div>
       </div>
@@ -181,4 +217,67 @@ export default {
 </script>
 
 <style lang="css">
+
+.chatlog{
+background:#fff;
+}
+
+h2 .titles{
+margin-bottom:10%;
+
+}
+
+.description{
+	line-height:30px;
+	font-size:14px;
+
+}
+
+.rateBtn{
+	margin-left:40%;
+	border-radius: 50%;
+	background:#663399;
+	height: 100px;
+	width: 100px;
+	color:#fff;
+}
+
+.rBtnText{
+    margin-top: 30px;
+	
+
+}
+
+.rateBtn:hover{
+	
+	background:#BF55EC;
+	
+	color:#fff;
+}
+
+.showProjectImg 
+{
+	width:100%;
+	min-height:300px;
+
+}
+
+
+.projectBackground
+{
+	background:white;
+}
+
+.col-md-10 img 
+{
+	
+	width:100%;
+	height:100%;
+}
+.showProjectImg{
+
+min-height:600px;
+
+
+}
 </style>

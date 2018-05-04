@@ -11,7 +11,7 @@
     </ul>
     <!-- {{project.id}} -->
     <!-- <pre>{{project}}</pre> -->
-    <pre>{{ratingConditions}}</pre>
+    
   </div>
 </template>
 

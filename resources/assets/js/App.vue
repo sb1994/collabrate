@@ -24,5 +24,8 @@
   }
 </script>
 <style>
+body {
+background-color:#C1CDCD;
 
+}
 </style>

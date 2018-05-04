@@ -43745,7 +43745,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\nbody {\r\nbackground-color:#C1CDCD;\n}\r\n", ""]);
 
 // exports
 
@@ -46847,7 +46847,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       var data = {
         client_id: 2,
-        client_secret: 'sF0zrVvEAgP4zbAnHz0HOgRvfmUjDLMU9B8ivRdF',
+        client_secret: 'Ltu89NSzkDip1A7ZpMFSYlqFIfXnt3wPMFF3ctVt',
         grant_type: 'password',
         username: this.email,
         password: this.password
@@ -48097,7 +48097,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n#projects>row{\r\n    \r\nmargin-right: 5%;\n}\n.task-editor\r\n{\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\t\r\n  \tright: 0;\r\n  \tbottom: 0;\r\n\tbackground:white;\r\n\theight:100%;\r\n\t\r\n\topacity:0;\n}\n.task-editor:hover{\r\n-webkit-transition: all 0.4s ease-in-out;\r\ntransition: all 0.4s ease-in-out;\r\n\r\nopacity:1;\n}\n.task-editor ul \r\n{\r\n\t\r\n\tlist-style-type: none;\n}\n.task-editor li:first-child{\r\nmargin-top:100px;\n}\n.task-editor ul button{\r\n\r\n\tmargin-top: 50%;\r\n    width: 79px;\n}\n#projects small {\r\n  color: #f0f0f0;\r\n  font-size: 10px;\r\n  letter-spacing: 1px;\r\n  text-transform: uppercase;\n}\n#projects .project-thumb {\r\n  position: relative;\r\n  padding: 0;\r\n  margin-top: 32px;\n}\n.project-overlay {\r\n  position: absolute;\r\n  background: #222; /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */\r\n  background: -webkit-gradient(linear, left top, right bottom, from(#753a88), to(#cc2b5e));\r\n  background: linear-gradient(to bottom right, #753a88, #cc2b5e); /* Standard syntax */    \r\n  color: #ffffff;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  width: 83%;\r\n  height: 100%;\r\n  text-align: center;\r\n  vertical-align: top;\r\n  opacity: 0;\r\n  -webkit-transition: all 0.4s ease-in-out;\r\n  transition: all 0.4s ease-in-out;\n}\n.projectFixedScale\r\n{\r\n\tmin-width:380px;\r\n\tmin-height:400px;\n}\n.project-view\r\n{\r\n\tcolor:#663399;\n}\n.project-view:hover\r\n{\r\n\tcolor:#fff; /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */\r\n\tbackground: -webkit-gradient(linear, left top, right bottom, from(#753a88), to(#cc2b5e));\r\n\tbackground: linear-gradient(to bottom right, #753a88, #cc2b5e); /* Standard syntax */ \r\n\t -webkit-transition: all 0.4s ease-in-out; \r\n\t transition: all 0.4s ease-in-out;\n}\n#projects .project-item {\r\n    position: absolute;\r\n    top:50%;\r\n    left: 50%;\r\n    -webkit-transform:translate(-50%,-50%);\r\n          transform:translate(-50%,-50%);\n}\n#projects .project-thumb:hover .project-overlay {\r\n  opacity: 0.9;\n}\n#projects .text-center {\r\n  padding-top: 62px;\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -48109,6 +48109,33 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(3);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -48163,61 +48190,84 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("transition", { attrs: { name: "fade" } }, [
-    _c(
-      "div",
-      { staticClass: "col-md-3 col-sm-3" },
-      [
-        _c("p", [_vm._v(_vm._s(_vm.project.name))]),
-        _vm._v(" "),
-        _c("img", {
-          staticClass: "img-responsive",
-          attrs: {
-            src: _vm.path + "/storage/img/cover_img/" + _vm.project.cover_img,
-            alt: ""
-          }
-        }),
-        _vm._v(" "),
-        _c("img", {
-          staticClass: "img-responsive",
-          attrs: { src: _vm.path + "/storage/img/icons/n1.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("p", [_vm._v(_vm._s(_vm.project.cover_img))]),
-        _vm._v(" "),
+    _c("div", { attrs: { id: "projects" } }, [
+      _c("div", { staticClass: "col-md-5 col-sm-3" }, [
         _c(
-          "router-link",
-          {
-            attrs: {
-              to: { name: "project_edit", params: { id: _vm.project.id } }
-            }
-          },
-          [_vm._v("Edit Project")]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          {
-            attrs: {
-              to: { name: "project_show", params: { id: _vm.project.id } }
-            }
-          },
-          [_vm._v("Show Project")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            on: {
-              click: function($event) {
-                _vm.requestDelete(_vm.project)
-              }
-            }
-          },
-          [_vm._v("Delete Project")]
+          "div",
+          { staticClass: "project-thumb" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "project-view",
+                attrs: {
+                  to: { name: "project_show", params: { id: _vm.project.id } }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "img-responsive projectFixedScale",
+                  attrs: {
+                    src:
+                      _vm.path +
+                      "/storage/img/cover_img/" +
+                      _vm.project.cover_img,
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "project-overlay" }, [
+                  _c("div", { staticClass: "project-item" }, [
+                    _c("h3", [_vm._v(_vm._s(_vm.project.name))])
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "task-editor" }, [
+              _c("ul", [
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: {
+                            name: "project_edit",
+                            params: { id: _vm.project.id }
+                          }
+                        }
+                      },
+                      [
+                        _c("img", { attrs: { src: "public/icons/edit.png" } }),
+                        _vm._v("edit")
+                      ]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "button",
+                    {
+                      on: {
+                        click: function($event) {
+                          _vm.requestDelete(_vm.project)
+                        }
+                      }
+                    },
+                    [_vm._v("Delete Project")]
+                  )
+                ])
+              ])
+            ])
+          ],
+          1
         )
-      ],
-      1
-    )
+      ])
+    ])
   ])
 }
 var staticRenderFns = []
@@ -49317,7 +49367,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.submit{\r\nmargin-left:40%;\r\nbackground-color: #000;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n\tmargin-top:3%;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n\t border-radius: 100px;\r\n\t -webkit-transition: all 0.4s ease-in-out;\r\n\t transition: all 0.4s ease-in-out;\n}\n.submit:hover{\r\nmargin-left:40%;\r\nbackground-color: #222;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n\t border-radius: 100px;\r\n\t -webkit-transition: all 0.4s ease-in-out;\r\n\t transition: all 0.4s ease-in-out;\n}\ninput[type=\"file\"] {\n}\n#cover_image {\r\n\t position:absolute;\r\n    top:0px;\r\n    left:0;\r\n    background: transparent;\r\n    border: none !important;\r\n    width:170px;\r\n    color:black;\n}\n.createPro-submit{\r\n\t\t\t  margin-top:5%;\n}\n.fixed-imageUploadSize{\r\n\t\t\t  min-width: 460px;\r\n\t\t\t  min-height: 380px;\n}\n#project .form-control {\r\n  border: 1px solid #f0f0f0;\r\n  -webkit-box-shadow: none;\r\n          box-shadow: none;\r\n  margin-bottom: 10px;\r\n  -webkit-transition: all 0.4s ease-in-out;\r\n  transition: all 0.4s ease-in-out;\n}\n#project .form-control:hover {\r\n  border-color: #777;\n}\n#project input,\r\n#project select {\r\n  height: 50px;\n}\n.radio-inline, .checkbox-inline {\r\n    position: relative;\r\n    display: inline-block;\r\n    padding-left: 10%;\r\n    margin-bottom: 0;\r\n    vertical-align: middle;\r\n    font-weight: normal;\r\n    cursor: pointer;\n}\ninput[type=\"radio\"] {\r\n  position: relative;\r\n  display: inline-block;\r\n  min-height: 90px;\r\n  margin-left:10%;\r\n  width: 30%;\r\n  \r\n  -webkit-appearance: none;\r\n  -moz-appearance: none;\r\n  -o-appearance: none;\r\n  appearance: none;\n}\ninput[type=\"radio\"]:before {\r\n  position: absolute;\r\n  margin: auto auto;\r\n  left: 5px;\r\n  right: 0;\r\n  bottom: 0;\r\n  top: 0;\r\n  content: \"\";\r\n  display: block;\r\n  height: 80px;\r\n  width: 80px;\r\n  border: 2px solid #fff;\r\n  border-radius: 50%;\r\n  -webkit-transition: all 0.1s ease-in;\r\n  transition: all 0.1s ease-in;\n}\ninput[type=\"radio\"]:after {\r\n  content: \"\";\r\n  font-size: 2em;\r\n  text-align: center;\r\n  line-height: 70px;\r\n  color: #555555;\r\n  position: absolute;\r\n  margin: auto auto;\r\n  left: 15px;\r\n  right: 0;\r\n  bottom: 0;\r\n  top: 0;\r\n  display: block;\r\n  height: 60px;\r\n  width: 60px;\r\n  border-radius: 50%;\r\n  -webkit-box-shadow: 3px 3px 5px 6px #ccc;\r\n  box-shadow:         3px 3px 5px 6px #ccc;\r\n  background-position: center;\r\n  background:#fff;\r\n  -webkit-transition: all 0.3s ease-out;\r\n  transition: all 0.3s ease-out;\n}\ninput[type=\"radio\"]:hover:before {\r\n  height: 60px;\r\n  width: 60px;\n}\ninput[type=\"radio\"]:checked:before { /* For Safari 5.1 to 6.0 */ /* For Firefox 3.6 to 15 */\r\n  background: -webkit-gradient(linear, left top, right bottom, from(#753a88), to(#cc2b5e));\r\n  background: linear-gradient(to bottom right, #753a88, #cc2b5e); \r\n  border: none;\r\n  border-radius: 0;\r\n  border-radius:50%;\n}\ninput[type=\"radio\"]:focus {\r\n  outline: none;\n}\n.radioName{\r\n\r\n\tmargin-left:43%;\n}\r\n", ""]);
 
 // exports
 
@@ -49329,6 +49379,40 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(3);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -49502,18 +49586,16 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("p", [_vm._v("Add Project")]),
-    _vm._v(" "),
-    _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "col-md-6" }, [
+      _c("h3", { staticClass: "dark-grey" }, [_vm._v("Project Thumbnail")]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
       _c("div", { staticClass: "form-group" }, [
-        _c(
-          "label",
-          { staticClass: "label-control", attrs: { for: "cover_img" } },
-          [_vm._v("Cover Image:")]
-        ),
-        _vm._v(" "),
         _c("input", {
-          staticClass: "form-control",
+          staticClass: "form-control fixed-imageUploadSize",
           attrs: {
             type: "file",
             id: "cover_img",
@@ -49522,11 +49604,19 @@ var render = function() {
           },
           on: { change: _vm.onFileChanged }
         })
-      ]),
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "col-md-6 ", attrs: { id: "project" } }, [
+      _c("h3", { staticClass: "dark-grey" }, [_vm._v("Project Description")]),
       _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
+      _vm._m(1),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group col-lg-12" }, [
         _c("label", { staticClass: "label-control", attrs: { for: "name" } }, [
-          _vm._v("Name:")
+          _vm._v("Project Title:")
         ]),
         _vm._v(" "),
         _c("input", {
@@ -49552,12 +49642,14 @@ var render = function() {
         })
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("label", { staticClass: "label-control", attrs: { for: "skill" } }, [
-          _vm._v("Description:")
-        ]),
+      _c("div", { staticClass: "form-group col-lg-12" }, [
+        _c(
+          "label",
+          { staticClass: "label-control", attrs: { for: "description" } },
+          [_vm._v(" Project Description:")]
+        ),
         _vm._v(" "),
-        _c("input", {
+        _c("textarea", {
           directives: [
             {
               name: "model",
@@ -49567,12 +49659,7 @@ var render = function() {
             }
           ],
           staticClass: "form-control",
-          attrs: {
-            type: "text",
-            name: "description",
-            id: "description",
-            value: ""
-          },
+          attrs: { rows: "5", placeholder: "description" },
           domProps: { value: _vm.project.description },
           on: {
             input: function($event) {
@@ -49585,48 +49672,51 @@ var render = function() {
         })
       ]),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "form-group" },
-        [
-          _c("label", [_vm._v(" Project categories:")]),
-          _vm._v(" "),
+      _c("div", { staticClass: "form-group col-lg-12" }, [
+        _c("label", [_vm._v(" Project categories:")]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Please select a category")]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "radioBtn" },
           _vm._l(_vm.categories, function(category) {
-            return _c(
-              "label",
-              { key: category.id, staticClass: "checkbox-inline" },
-              [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.project.category_id,
-                      expression: "project.category_id"
-                    }
-                  ],
-                  attrs: { type: "radio", name: "category" },
-                  domProps: {
-                    value: category.id,
-                    checked: _vm._q(_vm.project.category_id, category.id)
-                  },
-                  on: {
-                    change: function($event) {
-                      _vm.$set(_vm.project, "category_id", category.id)
-                    }
+            return _c("label", { staticClass: "checkbox-inline" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.project.category_id,
+                    expression: "project.category_id"
                   }
-                }),
-                _vm._v(_vm._s(category.name) + "\n        ")
-              ]
-            )
+                ],
+                attrs: { type: "radio", name: "category" },
+                domProps: {
+                  value: category.id,
+                  checked: _vm._q(_vm.project.category_id, category.id)
+                },
+                on: {
+                  change: function($event) {
+                    _vm.$set(_vm.project, "category_id", category.id)
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("p", { staticClass: "radioName" }, [
+                _vm._v(_vm._s(category.name))
+              ])
+            ])
           })
-        ],
-        2
-      ),
-      _vm._v(" "),
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-group col-lg-12" }, [
       _c(
         "button",
         {
+          staticClass: "submit btn-md",
           attrs: { type: "button", name: "button" },
           on: { click: _vm.addProject }
         },
@@ -49635,7 +49725,20 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [_c("small", [_vm._v("Please select a project to upload")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [_c("small", [_vm._v("Please insert project details")])])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -50137,7 +50240,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.chatlog{\r\nbackground:#fff;\n}\nh2 .titles{\r\nmargin-bottom:10%;\n}\n.description{\r\n\tline-height:30px;\r\n\tfont-size:14px;\n}\n.rateBtn{\r\n\tmargin-left:40%;\r\n\tborder-radius: 50%;\r\n\tbackground:#663399;\r\n\theight: 100px;\r\n\twidth: 100px;\r\n\tcolor:#fff;\n}\n.rBtnText{\r\n    margin-top: 30px;\n}\n.rateBtn:hover{\r\n\t\r\n\tbackground:#BF55EC;\r\n\t\r\n\tcolor:#fff;\n}\n.showProjectImg \r\n{\r\n\twidth:100%;\r\n\tmin-height:300px;\n}\n.projectBackground\r\n{\r\n\tbackground:white;\n}\n.col-md-10 img \r\n{\r\n\t\r\n\twidth:100%;\r\n\theight:100%;\n}\n.showProjectImg{\r\n\r\nmin-height:600px;\n}\r\n", ""]);
 
 // exports
 
@@ -50155,6 +50258,42 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Comments_ProjectCommentComposer_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Comments_ProjectCommentComposer_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ProjectRating_vue__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ProjectRating_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__ProjectRating_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -51218,9 +51357,7 @@ var render = function() {
               [_vm._v("Unlike")]
             )
           ])
-    ]),
-    _vm._v(" "),
-    _c("pre", [_vm._v(_vm._s(_vm.ratingConditions))])
+    ])
   ])
 }
 var staticRenderFns = []
@@ -51245,57 +51382,93 @@ var render = function() {
     "div",
     [
       _c("transition", { attrs: { appear: "" } }, [
-        _c(
-          "div",
-          { attrs: { id: "project-view" } },
-          [
-            _c("p", [_vm._v("Id: " + _vm._s(_vm.project.id))]),
-            _vm._v(" "),
-            _c("p", [_vm._v("Project Name: " + _vm._s(_vm.project.name))]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("Project description: " + _vm._s(_vm.project.description))
-            ]),
-            _vm._v(" "),
-            _c("img", {
-              staticClass: "img-responsive",
-              attrs: {
-                src:
-                  _vm.path + "/storage/img/cover_img/" + _vm.project.cover_img,
-                alt: ""
-              }
-            }),
-            _vm._v(" "),
-            _vm.project.user_id == this.$auth.getUserId()
-              ? _c(
-                  "router-link",
-                  {
-                    attrs: {
-                      to: {
-                        name: "project_edit",
-                        params: { id: _vm.project.id }
-                      }
-                    }
-                  },
-                  [_vm._v("Edit Project")]
-                )
-              : _vm._e(),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
+        _c("div", { attrs: { id: "project-view" } }, [
+          _c("div", { staticClass: "col-md-8" }, [
+            _c("div", { staticClass: "panel panel-default" }, [
               _c(
                 "div",
-                { staticClass: "col-md-12" },
+                { staticClass: "panel-body" },
                 [
-                  _c("project-rating", {
-                    attrs: { project: _vm.project },
-                    on: { updateProjectRating: _vm.updateProjectRating }
+                  _c("img", {
+                    staticClass: " showProjectImg",
+                    attrs: {
+                      src:
+                        _vm.path +
+                        "/storage/img/cover_img/" +
+                        _vm.project.cover_img,
+                      alt: ""
+                    }
                   }),
+                  _vm._v(" "),
+                  _c("hr"),
                   _vm._v(" "),
                   _c("project-comment-composer", {
                     attrs: { projectId: _vm.project.id },
                     on: { commentAdded: _vm.updateCommentLog }
-                  }),
+                  })
+                ],
+                1
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("div", { staticClass: "panel panel-default" }, [
+              _c(
+                "div",
+                { staticClass: "panel-body" },
+                [
+                  _c("h2", [
+                    _c("small", { staticClass: "titles" }, [
+                      _vm._v("Project Name: ")
+                    ])
+                  ]),
                   _vm._v(" "),
+                  _c("h2", [_vm._v(_vm._s(_vm.project.name))]),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("h2", [_c("small", [_vm._v("Project description :")])]),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "description" }, [
+                    _vm._v(" " + _vm._s(_vm.project.description))
+                  ]),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      attrs: {
+                        to: {
+                          name: "project_edit",
+                          params: { id: _vm.project.id }
+                        }
+                      }
+                    },
+                    [_vm._v("Edit Project")]
+                  ),
+                  _vm._v(" "),
+                  _c("button", { on: { click: function($event) {} } }),
+                  _vm._v(" "),
+                  _c("project-rating", {
+                    attrs: { project: _vm.project },
+                    on: { updateProjectRating: _vm.updateProjectRating }
+                  })
+                ],
+                1
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-12 chatlog" },
+                [
                   _c("project-comment-log", {
                     attrs: { project_comments: _vm.project_comments }
                   })
@@ -51303,9 +51476,8 @@ var render = function() {
                 1
               )
             ])
-          ],
-          1
-        )
+          ])
+        ])
       ])
     ],
     1

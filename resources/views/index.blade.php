@@ -6,6 +6,7 @@
      <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
      <link href="{{asset('css/comment.css')}}" rel="stylesheet" type="text/css">
       <meta name="csrf-token" id="token" value="{{ csrf_token() }}">
+	  
   </head>
   <body>
     <div id="app"></div>
