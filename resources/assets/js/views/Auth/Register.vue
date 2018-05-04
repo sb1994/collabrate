@@ -17,51 +17,38 @@
         </div>
         <button type="button" name="button"  v-on:click="registerUser">Register</button>
     </div>
-    <!-- <pre>
-      {{form}}
-    </pre> -->
   </div>
 </template>
 <script>
 import {registerUrl} from '../../config'
-import LoggedoutNavBar from '../../components/LoggedoutNavBar.vue';
+import LoggedoutNavBar from '../../components/LoggedoutNavbar.vue';
 export default{
   components:{
     'loggedout-navbar':LoggedoutNavBar
   },
-data(){
-  return{
-    form:{
-      name:"",
-      email:"",
-      password:"",
+  data(){
+    return{
+      form:{
+        name:"",
+        email:"",
+        password:"",
 
-    },
-    error:{},
-    isProssessing:false
-  }
-},
-methods:{
-  registerUser(){
-    console.log(registerUrl);
-    axios.post(registerUrl,this.form)
-         .then(response=>{
-           if (response.status===200) {
-             this.$router.push('/login');
-           }
-         })
-
-  }
-    // var base_url = "http://localhost/project_pro/public/";
-    // axios.post(base_url+"/api/register",user)
-    //       //es6 syntax
-    //       .then(response=>{
-    //         //console.log(response.data);
-    //         console.log(response);
-    //       })
-    // console.log(this.user);
+      },
+      error:{},
+      isProssessing:false
+    }
   },
-
+  methods:{
+    registerUser(){
+      console.log(registerUrl);
+      axios.post(registerUrl,this.form)
+          .then(response=>{
+            if (response.status===200) {
+              this.$router.push('/login');
+            }
+          })
+    }
+  },
 }
 
 </script>

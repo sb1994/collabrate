@@ -62,7 +62,7 @@
     <div class="col-md-9">
       <profile-navbar></profile-navbar>
       <transition appear>
-      <router-view></router-view>
+      <router-view ></router-view>
     </transition>
 
     </div>

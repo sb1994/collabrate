@@ -5,14 +5,12 @@
  <div>
 
 
-                    <div class="section-title">
-                         <h3 class="text-center">Edit Profile</h3>
-                        <hr>
-                        <h2 class="text-center">Personalise Your Profile</h2>
-                    </div>
-
+    <div class="section-title">
+          <h3 class="text-center">Edit Profile</h3>
+        <hr>
+        <h2 class="text-center">Personalise Your Profile</h2>
+    </div>
     <div class="container">
-
       <div class="form-group">
         <label for="profile_img" class="label-control"></label>
         <input type="file" id="profile_img" name="profile_img" value="" class="form-control" v-on:change="onFileChanged">
@@ -23,9 +21,6 @@
           <input type="checkbox" name="disable-img" id="disable-img" v-model="disableImg">
         </label>
       </div>
-
-
-
 	  <div class="col-md-6 col-sm-6">
       <div class="form-group">
         <label for="name" class="label-control">Name</label>
@@ -71,29 +66,22 @@
 	 <div class="col-md-12 col-sm-12">
       <div class="form-group">
         <label for="biography" class="label-control">Biography</label>
-        <!--<input type="text" name="biography" id="biography" value="" class="form-control" v-model="user.biography">-->
-		<textarea class="form-control" rows="5" placeholder="Biography" v-model="user.biography"></textarea>
+		    <textarea class="form-control" rows="5" placeholder="Biography" v-model="user.biography"></textarea>
       </div>
 	  </div>
 
       <div class="form-group">
-        <!-- <label for="role" class="label-control">Role</label>-->
-
-        <!--<input type="checkbox" name="role"  value="" class="form-control" v-model="user.role_id"> -->
       </div>
       <div class="form-group">
         <label class="label-control">Role
-          <!-- {{this.roles}} -->
           <label class="checkbox-inline" v-for="role in roles">
             <input type="radio" name="role" v-bind:value="role.id" v-model="user.role_id">{{role.title}}
           </label>
         </label>
       </div>
 	   <div class="col-md-2 col-sm-4">
-
         <button type="button" class="form-control pull-center text-center submit" name="button"  v-on:click="editProfile">Update Generel Profile</button>
 		 </div>
-
     </div>
  
   </div>
@@ -158,15 +146,12 @@ export default{
              this.$router.push({name:"profile"});
            }).catch(function (error) {
             if (error.response) {
-              // The request was made and the server responded with a status code
-              // that falls out of the range of 2xx
+              // The request was made and the server responded with a status code outside of 200
               console.log(error.response.data);
               console.log(error.response.status);
               console.log(error.response.headers);
             } else if (error.request) {
               // The request was made but no response was received
-              // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-              // http.ClientRequest in node.js
               console.log(error.request);
             } else {
               // Something happened in setting up the request that triggered an Error
@@ -174,51 +159,14 @@ export default{
             }
             console.log(error.config);
           });
-      console.log(this.user);
-      // if (event.target.files.length <=0) {
-      //   this.user.profile_img = "";
-      // }
-      // axios.post(apiDomain+"api/editProfile",this.user)
-      //      .then(response=>{
-      //        console.log(response.data);
-      //        this.$router.push({name:"profile"});
-      //      }).catch(function (error) {
-      //       if (error.response) {
-      //         // The request was made and the server responded with a status code
-      //         // that falls out of the range of 2xx
-      //         console.log(error.response.data);
-      //         console.log(error.response.status);
-      //         console.log(error.response.headers);
-      //       } else if (error.request) {
-      //         // The request was made but no response was received
-      //         // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-      //         // http.ClientRequest in node.js
-      //         console.log(error.request);
-      //       } else {
-      //         // Something happened in setting up the request that triggered an Error
-      //         console.log('Error', error.message);
-      //       }
-      //       console.log(error.config);
-      //     });
-      //console.log(this.user);
     },
     onFileChanged(event){
       //const files = event.target.files;
       const fileReader = new FileReader();
-
       fileReader.readAsDataURL(event.target.files[0]);
       fileReader.onload = (event)=>{
         this.user.profile_img = event.target.result
       }
-
-      console.log(this.user);
-      // let filename = files[0].filename;
-      // //checks where the extenstion is
-      // if (filename.lastIndexOf('.')<=0) {
-      //     return alert('Please ad valid file')
-      // }
-      //
-      // console.log(fileReader.readAsDataURL(files[0]));
     },
   }
 }

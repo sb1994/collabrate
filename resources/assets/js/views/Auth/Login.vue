@@ -36,7 +36,7 @@
 </template>
 <script>
 import {loginUrl,getHeader,userUrl,authenticateUrl} from "../../config";
-import LoggedoutNavBar from '../../components/LoggedoutNavBar.vue';
+import LoggedoutNavBar from '../../components/LoggedoutNavbar.vue';
 export default{
   components:{
     'loggedout-navbar':LoggedoutNavBar
@@ -51,7 +51,7 @@ export default{
     loginUser(){
       var data={
         client_id:2,
-        client_secret:'OoNGS035zwEK5qKbOXhN9jRRXHbhf1Pyad5rwWTD',
+        client_secret:'sF0zrVvEAgP4zbAnHz0HOgRvfmUjDLMU9B8ivRdF',
         grant_type:'password',
         username:this.email,
         password:this.password

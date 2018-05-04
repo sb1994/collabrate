@@ -30,29 +30,29 @@ const router = new VueRouter({
 			},
 			children:[
 				{
+					path: '',
+					name:'projects_view',
+					component: Projects,
+					//meta fields used to decide who can access what page
+					meta:{
+						forAuth:true
+					}
+				},
+				{
           path: '/project/create',
           name:'project_create',
           component: CreateProject,
           //meta fields used to decide who can access what page
 				},
 				{
-        path: '/projects',
-        name:'projects_view',
-        component: Projects,
-        //meta fields used to decide who can access what page
-        meta:{
-          forAuth:true
-        }
+						path: '/projects/edit/:id',
+						name:'project_edit',
+						component: EditProject,
+						//meta fields used to decide who can access what page
+						meta:{
+							forAuth:true
+						}
 					},
-					{
-							path: '/projects/edit/:id',
-							name:'project_edit',
-							component: EditProject,
-							//meta fields used to decide who can access what page
-							meta:{
-								forAuth:true
-							}
-						},
 					{
 							path: '/projects/show/:id',
 							name:'project_show',
