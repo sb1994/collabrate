@@ -2,7 +2,6 @@
   <div>
     <loggedout-navbar></loggedout-navbar>
     <div class="container">
-      <p class="loginVue">Login Vue</p>
 	  	 
 
 
@@ -52,7 +51,7 @@ export default{
     loginUser(){
       var data={
         client_id:2,
-        client_secret:'Ltu89NSzkDip1A7ZpMFSYlqFIfXnt3wPMFF3ctVt',
+        client_secret:'OoNGS035zwEK5qKbOXhN9jRRXHbhf1Pyad5rwWTD',
         grant_type:'password',
         username:this.email,
         password:this.password

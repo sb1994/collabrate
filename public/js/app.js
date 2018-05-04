@@ -1009,7 +1009,7 @@ module.exports = Component.exports
   var undefined;
 
   /** Used as the semantic version number. */
-  var VERSION = '4.17.5';
+  var VERSION = '4.17.10';
 
   /** Used as the size to enable large array optimizations. */
   var LARGE_ARRAY_SIZE = 200;
@@ -1433,6 +1433,14 @@ module.exports = Component.exports
   /** Used to access faster Node.js helpers. */
   var nodeUtil = (function() {
     try {
+      // Use `util.types` for Node.js 10+.
+      var types = freeModule && freeModule.require && freeModule.require('util').types;
+
+      if (types) {
+        return types;
+      }
+
+      // Legacy `process.binding('util')` for Node.js < 10.
       return freeProcess && freeProcess.binding && freeProcess.binding('util');
     } catch (e) {}
   }());
@@ -43403,15 +43411,18 @@ module.exports = function spread(callback) {
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {var apply = Function.prototype.apply;
+/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
+            (typeof self !== "undefined" && self) ||
+            window;
+var apply = Function.prototype.apply;
 
 // DOM APIs, for completeness
 
 exports.setTimeout = function() {
-  return new Timeout(apply.call(setTimeout, window, arguments), clearTimeout);
+  return new Timeout(apply.call(setTimeout, scope, arguments), clearTimeout);
 };
 exports.setInterval = function() {
-  return new Timeout(apply.call(setInterval, window, arguments), clearInterval);
+  return new Timeout(apply.call(setInterval, scope, arguments), clearInterval);
 };
 exports.clearTimeout =
 exports.clearInterval = function(timeout) {
@@ -43426,7 +43437,7 @@ function Timeout(id, clearFn) {
 }
 Timeout.prototype.unref = Timeout.prototype.ref = function() {};
 Timeout.prototype.close = function() {
-  this._clearFn.call(window, this._id);
+  this._clearFn.call(scope, this._id);
 };
 
 // Does not start the time, just sets up the members needed.
@@ -43454,7 +43465,7 @@ exports._unrefActive = exports.active = function(item) {
 
 // setimmediate attaches itself to the global object
 __webpack_require__(44);
-// On some exotic environments, it's not clear which object `setimmeidate` was
+// On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
 exports.setImmediate = (typeof self !== "undefined" && self.setImmediate) ||
@@ -43943,6 +43954,14 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 		path: '/search-projects',
 		name: 'search-projects',
 		component: __WEBPACK_IMPORTED_MODULE_11__views_Project_SearchProjects_vue___default.a,
+		//meta fields used to decide who can access what page
+		meta: {
+			forVisitors: true
+		}
+	}, {
+		path: '/',
+		name: 'index',
+		component: __WEBPACK_IMPORTED_MODULE_2__views_Index_vue___default.a,
 		//meta fields used to decide who can access what page
 		meta: {
 			forVisitors: true
@@ -46680,7 +46699,8 @@ exports.push([module.i, "\n.row{\r\n\t\t\t  \r\n\t\t\t  margin-top: 5%;\r\n\t\t\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_LoggedoutNavbar_vue__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_LoggedoutNavbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_LoggedoutNavbar_vue__);
 //
 //
 //
@@ -46707,7 +46727,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	// 	components:{
+	//     'loggedout-navbar':LoggedoutNavBar
+	//   },
+
+});
 
 /***/ }),
 /* 57 */
@@ -46906,7 +46932,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -46927,7 +46952,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       var data = {
         client_id: 2,
-        client_secret: 'Ltu89NSzkDip1A7ZpMFSYlqFIfXnt3wPMFF3ctVt',
+        client_secret: 'OoNGS035zwEK5qKbOXhN9jRRXHbhf1Pyad5rwWTD',
         grant_type: 'password',
         username: this.email,
         password: this.password
@@ -47071,8 +47096,6 @@ var render = function() {
       _c("loggedout-navbar"),
       _vm._v(" "),
       _c("div", { staticClass: "container" }, [
-        _c("p", { staticClass: "loginVue" }, [_vm._v("Login Vue")]),
-        _vm._v(" "),
         _c("div", { staticClass: "div-center" }, [
           _c("div", { staticClass: "content" }, [
             _c("h3", [_vm._v("Login")]),
@@ -52387,6 +52410,164 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(159)
+/* template */
+var __vue_template__ = __webpack_require__(160)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\LoggedoutNavbar.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-51945995", Component.options)
+  } else {
+    hotAPI.reload("data-v-51945995", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 159 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      isAuth: this.$auth.isAuthenticated()
+    };
+  },
+
+  methods: {
+    logout: function logout() {
+      //destroys the loggined in user tokens 
+      this.$auth.destroyToken();
+      //check wheter the logout was success full
+      if (!this.$auth.isAuthenticated()) {
+        this.isAuth = this.$auth.isAuthenticated();
+      }
+      //makes a call to the router object 
+      this.$router.push({ name: "login" });
+    }
+  }
+});
+
+/***/ }),
+/* 160 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("nav", { staticClass: "navbar navbar-default" }, [
+    _c("div", { staticClass: "container-fluid" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("ul", { staticClass: "nav navbar-nav" }, [
+        _c(
+          "li",
+          [
+            _c("router-link", { attrs: { to: { name: "login" } } }, [
+              _vm._v("Login")
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          [
+            _c("router-link", { attrs: { to: { name: "register" } } }, [
+              _vm._v("Register")
+            ])
+          ],
+          1
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "navbar-header" }, [
+      _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
+        _vm._v("Collabrate")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-51945995", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

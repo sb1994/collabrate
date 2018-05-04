@@ -98,6 +98,15 @@ const router = new VueRouter({
       meta:{
         forVisitors:true
       }
+    },
+    {
+      path:'/',
+      name:'index',
+      component: Index,
+      //meta fields used to decide who can access what page
+      meta:{
+        forVisitors:true
+      }
     }
 	]
 })

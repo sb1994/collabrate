@@ -1,7 +1,6 @@
 <template lang="html">
 <div class="container">
-
-  
+		<!-- <loggedout-navbar></loggedout-navbar> -->
   <div class="row">
 	  
     <div class="col-sm-8 col-lg-7"> 
@@ -25,7 +24,12 @@
 </template>
 
 <script>
+import LoggedoutNavBar from '../components/LoggedoutNavbar.vue';
 export default {
+// 	components:{
+//     'loggedout-navbar':LoggedoutNavBar
+//   },
+	
 }
 </script>
 
